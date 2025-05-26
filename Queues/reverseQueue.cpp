@@ -1,0 +1,57 @@
+#include<queue>
+#include<stack>
+#include<iostream>
+using namespace std;
+
+void reverseQueue(queue<int> &q)
+{
+    stack<int> s;
+    while(!q.empty())
+    {
+        int temp = q.front();
+        q.pop();
+        s.push(temp);
+    }
+    while(!s.empty())
+    {
+        int temp = s.top();
+        s.pop();
+        q.push(temp);
+    }
+}
+
+void revereUsingRecursion(queue<int> &q)
+{
+    //b.c
+    if(q.empty())
+    {
+        return;
+    }
+
+    //step 1
+    int temp = q.front();
+    q.pop();
+
+    //step 2
+    revereUsingRecursion(q);
+
+    //step 3
+    q.push(temp);
+}
+int main()
+{
+    queue<int> q;
+    q.push(3);
+    q.push(2);
+    q.push(6);
+    q.push(8);
+    q.push(9);
+
+    //reverseQueue(q);
+    revereUsingRecursion(q);
+    while(!q.empty())
+    {
+        cout<<q.front()<<" ";
+        q.pop();
+    }
+}
