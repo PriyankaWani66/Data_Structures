@@ -36,7 +36,9 @@ class Deque{
         }
 
         void pushFront(int data) {
-                if((front == 0 && rear == size-1)  || (front==(rear+1)%size)) {
+                if((front == 0 && rear == size-1)  || (front==(rear+1)%size))
+                //or both conditions can be covered using one condition i.e, rear == (front-1) % (size-1)
+                {
                         cout << "Q is fulll, cannot insert" << endl;
                         return;
                 }
