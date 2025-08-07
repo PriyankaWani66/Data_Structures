@@ -3,6 +3,7 @@
     "files.associations": {
         "iostream": "cpp",
         "vector": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "queue": "cpp"
     }
 }
