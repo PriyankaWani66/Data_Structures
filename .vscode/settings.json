@@ -4,6 +4,13 @@
         "iostream": "cpp",
         "vector": "cpp",
         "algorithm": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "ostream": "cpp",
+        "new": "cpp",
+        "array": "cpp",
+        "string_view": "cpp",
+        "span": "cpp"
     }
 }
