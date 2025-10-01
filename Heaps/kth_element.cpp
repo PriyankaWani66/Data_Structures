@@ -32,7 +32,7 @@ int kthSmallest(int arr[], int n, int k) {
 int kthGreatest(int arr[], int n, int k) {
     priority_queue<int, vector<int>, greater<int>> pq;
 
-    //create a max heap of size k
+    //create a min heap of size k
     for(int i=0;i<k;i++){
         pq.push(arr[i]);
     }

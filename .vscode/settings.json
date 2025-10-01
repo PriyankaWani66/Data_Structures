@@ -11,6 +11,7 @@
         "new": "cpp",
         "array": "cpp",
         "string_view": "cpp",
-        "span": "cpp"
+        "span": "cpp",
+        "initializer_list": "cpp"
     }
 }
